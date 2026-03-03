@@ -1,5 +1,107 @@
+/* -- PC Styling -- */
+
 body {
-   background-color:aquamarine;
+   background-color: cornflowerblue;
    color: black;
    font-family: 'Trebuchet MS';
 }
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+}
+
+.navLinks > li {
+    background: rgb(110, 110, 193);
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px; 
+    text-align: center;
+    border-radius: 10px;
+}
+
+#About {
+    align-content: center;
+    width: max-width;
+}
+
+#catWorks > ul {
+   list-style-type: none;
+   padding: 1rem;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+#catWorks > li {
+   
+   padding: 1rem;
+   
+}
+
+#dogWorks > ul {
+   list-style-type: none;
+   padding: 1rem;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+#dogWorks > li {
+   
+   padding: 1rem;
+   
+}
+
+a {
+    font-style: italic;
+}
+
+a:link {
+    color: pink;
+}
+
+a:hover {
+    color: rgb(128, 0, 90);
+}
+
+a:active {
+    color: gold;
+}
+
+a:visited {
+    color: goldenrod;
+}
+
+/* --- Tablet Sizing --- */
+@media (max-width: 1230px) {
+
+   img {
+      width: 95%;
+      height: auto;
+   }
+
+   body {
+      background-color: black;
+      color: cornflowerblue;
+   }
+}
+
+/* --- Phone Sizing --- */
+@media (max-width: 500px) {
+   body {
+      background-color: rgb(110, 110, 193);
+      color: goldenrod;
+   }
+
+   .navLinks > li {
+      background: black;
+   }
+
+   a:visited {
+    color: cornflowerblue;
+}
+
+}
+
