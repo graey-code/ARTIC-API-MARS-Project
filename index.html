@@ -11,8 +11,8 @@
         <nav>
             <ul class="navLinks">
                 <li><a href="#About">About</a></li>
-                <li><a href="#catWorks">Cat Artworks</a></li>
-                <li><a href="#dogWorks">Dog Artworks</a></li> 
+                <li><a id="catNav" href="#artWorks">Cat Artworks</a></li>
+                <li><a id="dogNav" href="#artWorks">Dog Artworks</a></li> 
             </ul>
         </nav>
     </header>
@@ -20,21 +20,18 @@
     <h1>ARTIC API Project</h1>
     <section id="About">
         <h2>About</h2>
-        <p>This is a coding project that pulls datapoints from the Art Institute of Chicago's open API about cats and dogs in art.</p>
+        <p>This is a coding project that pulls datapoints from the Art Institute of Chicago's open API about cats and dogs in art and returns the title and image of the first ten entries on random pages upon clicking the navigation links.</p>
+        <p> The sampling has been limited to the first five pages. Click on the navigation links at the top to "get" the API artwork data!</p>
     </section>
 
-    <section id="catWorks">
-        <h2>Cat Artworks</h2>
-        <ul>
+
+    <section id="artWorks">
+        <h2>Artworks</h2>
+        <ul id="artWorkList">
             
         </ul>
     </section>
-    <section id="dogWorks">
-        <h3>Dog Artworks</h3>
-        <ul>
-
-        </ul>
-    </section>
+    
 
     <script src="JS/index.js">
         
